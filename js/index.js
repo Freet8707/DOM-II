@@ -20,3 +20,11 @@ navLinks.forEach((element) =>{
         element.style.color = "#212529"
     })
 })
+
+const h2Hover = document.querySelectorAll("h2") 
+h2Hover.forEach((element) => {
+    element.addEventListener("click", () => {
+        element.style.color = "#1df900"
+        element.style.fontSize = "3.5rem"
+    })
+})
