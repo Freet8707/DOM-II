@@ -21,10 +21,17 @@ navLinks.forEach((element) =>{
     })
 })
 
-const h2Hover = document.querySelectorAll("h2") 
-h2Hover.forEach((element) => {
+const h2Click = document.querySelectorAll("h2") 
+h2Click.forEach((element) => {
     element.addEventListener("click", () => {
         element.style.color = "#1df900"
         element.style.fontSize = "3.5rem"
     })
+})
+
+const intro = document.querySelector(".intro")
+const firstP = document.querySelector("p")
+firstP.addEventListener("dblclick", () => {
+    intro.style.border = "none"
+    firstP.style.color = "#b34ee5"
 })
