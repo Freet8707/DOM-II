@@ -33,5 +33,12 @@ const intro = document.querySelector(".intro")
 const firstP = document.querySelector("p")
 firstP.addEventListener("dblclick", () => {
     intro.style.border = "none"
-    firstP.style.color = "#b34ee5"
+    firstP.style.color = "#a123ea"
+})
+
+const imgList = document.querySelectorAll("img")
+imgList[1].addEventListener("mouseover", (element) => {
+    imgList[1].src = "https://picsum.photos/200/200"
+    imgList[1].style.width = "100%"
+    imgList[1].style.height = "auto"
 })
