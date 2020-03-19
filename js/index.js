@@ -46,5 +46,12 @@ imgList[1].addEventListener("mouseover", (element) => {
 })
 
 imgList[2].addEventListener("click", () => {
-    imgList[2].classList.toggle("jeremys-class")
+    imgList[2].classList.add("jeremys-class")
 })
+
+const navSelector = document.querySelector("header")
+const htmlSelector = document.querySelector("html")
+htmlSelector.addEventListener("keydown", () => {
+    navSelector.style.backgroundColor = "red"
+})
+
