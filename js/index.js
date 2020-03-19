@@ -73,3 +73,6 @@ console.log(desth4)
 desth4.addEventListener("drag", () =>{
     destinationDiv.style.color = "purple"
 })
+desth4.addEventListener("dragend", () => {
+    destinationDiv.style.color = "black"
+})
