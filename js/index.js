@@ -62,3 +62,7 @@ bodySelector.addEventListener("keydown", (event) => {
 
 })
 
+const footerSelector = document.querySelector(".footer")
+navLinks[0].addEventListener("contextmenu", () =>{
+    footerSelector.style.background = "red"
+})
