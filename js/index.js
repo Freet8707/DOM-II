@@ -47,9 +47,13 @@ imgList[1].addEventListener("mouseover", (element) => {
     imgList[1].style.width = "100%"
     imgList[1].style.height = "auto"
 })
-
+const adventureSection = document.querySelector(".inverse-content")
+adventureSection.addEventListener("click", () => {
+    adventureSection.style.color = "purple"
+})
 imgList[2].addEventListener("click", () => {
     imgList[2].classList.add("jeremys-class")
+    event.stopPropagation()
 })
 
 const navSelector = document.querySelector("body")
