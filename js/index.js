@@ -49,9 +49,16 @@ imgList[2].addEventListener("click", () => {
     imgList[2].classList.add("jeremys-class")
 })
 
-const navSelector = document.querySelector("header")
-const htmlSelector = document.querySelector("html")
-htmlSelector.addEventListener("keydown", () => {
-    navSelector.style.backgroundColor = "red"
+const navSelector = document.querySelector("body")
+const bodySelector = document.querySelector("html")
+bodySelector.addEventListener("keydown", (event) => {
+    
+    if(event.keyCode === 13){
+        console.log(event.which)
+        navSelector.style.backgroundColor = "white"
+    } else {
+        navSelector.style.backgroundColor = "red"
+    }
+
 })
 
