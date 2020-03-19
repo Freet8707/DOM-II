@@ -66,3 +66,10 @@ const footerSelector = document.querySelector(".footer")
 navLinks[0].addEventListener("contextmenu", () =>{
     footerSelector.style.background = "red"
 })
+
+const destinationDiv = document.querySelector(".destination")
+const desth4 = document.querySelector(".destination h4")
+console.log(desth4)
+desth4.addEventListener("drag", () =>{
+    destinationDiv.style.color = "purple"
+})
