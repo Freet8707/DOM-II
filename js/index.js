@@ -19,6 +19,9 @@ navLinks.forEach((element) =>{
     element.addEventListener("mouseleave", () => {
         element.style.color = "#212529"
     })
+    element.addEventListener("click", () => {
+        event.preventDefault()
+    })
 })
 
 const h2Selector = document.querySelectorAll("h2") 
@@ -70,7 +73,8 @@ navLinks[0].addEventListener("contextmenu", () =>{
 const destinationDiv = document.querySelector(".destination")
 const desth4 = document.querySelector(".destination h4")
 const buttons = document.querySelectorAll(".btn")
-
+const contentPick = document.querySelector(".content-pick")
+console.log(contentPick)
 // console.log(desth4)
 desth4.addEventListener("drag", () =>{
     destinationDiv.style.color = "purple"
@@ -80,7 +84,6 @@ desth4.addEventListener("dragend", () => {
 })
 desth4.addEventListener("dragover", (event) => {
     if(event.target = bodySelector){
-        console.log("event")
         buttons.forEach((element) => {
             element.style.background = "purple"
         })
