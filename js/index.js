@@ -69,10 +69,20 @@ navLinks[0].addEventListener("contextmenu", () =>{
 
 const destinationDiv = document.querySelector(".destination")
 const desth4 = document.querySelector(".destination h4")
-console.log(desth4)
+const buttons = document.querySelectorAll(".btn")
+
+// console.log(desth4)
 desth4.addEventListener("drag", () =>{
     destinationDiv.style.color = "purple"
 })
 desth4.addEventListener("dragend", () => {
     destinationDiv.style.color = "black"
+})
+desth4.addEventListener("dragover", (event) => {
+    if(event.target = bodySelector){
+        console.log("event")
+        buttons.forEach((element) => {
+            element.style.background = "purple"
+        })
+    }
 })
